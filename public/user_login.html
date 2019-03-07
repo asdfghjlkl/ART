@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device width,initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/user_login.css"/>
+</head>
+<body>
+	<div id="header_link"></div>
+	
+	<div class="content-login">
+		<div class="content">
+			<div class="title">登录</div>
+			<div class="top-line">
+				<hr class="line-left">
+				<img class="title_img" src="image/user/register_01.png">
+				<hr class="line-right">
+			</div>
+		</div>
+	</div>
+	
+	<div class="content-detail">
+		<div class="input-group">
+			<div class="phone">
+				<div><span id="p">*</span><label for="p">手机号</label></div>
+				<div>
+					<input type="text" placeholder="请输入手机号" class="phone-num">
+				</div>
+			</div>	
+
+			<div class="pic">
+				<div><span id="p">*</span><label for="p">图形验证码</label></div>
+				<div class="code-content">
+					<input type="text" placeholder="请输入验证码" class="pic-info">
+					
+					<div class="code-img">
+						<img src="image/user/captcha.png" >
+					</div>
+					<div>
+						<a href="#"><img src="image/user/relode.png" class="load-icon"></a>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="pwd">
+				<div><span id="p">*</span><label for="p">密码</label></div>
+				<div>
+					<input type="text" placeholder="请输入密码" class="pwd-num">
+				</div>
+			</div>
+
+			<div class="remeber-box">
+				<input type="checkbox">
+				<span>记住我</span>
+				<a href="#">忘记密码</a>
+			</div>
+
+			<div>
+				<input type="button" value="登录" onclick="login()" class="login-btn">
+			</div>
+			</div>
+
+			<div class="other-login">
+				<div class="other-login-list">
+					<div class="incon-text">使用合作网站账号登录？</div>
+					<div class="incon-list">
+						<a href="#"><img src="image/incon/wechat.png" class="wechat"></a>	
+						<a href="#"><img src="image/incon/qq.png" class="qq"></a>
+					</div>
+				</div>
+				<div class="register">
+					<div class="register-title">还没有账户？</div>
+					<a href="#">立即注册></a>
+				</div>
+			</div>
+
+		</div>
+		
+	
+	<div id="d1"></div>
+
+	<script>
+		function login(){
+			var xhr=new XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					var result=xhr.responseText;
+					d1.innerHTML=result;
+				}
+			}
+			xhr.open("post","/user/login",true);
+			var formdata="phone="+phone.value+"&upwd="+upwd.value;
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			xhr.send(formdata);
+		}
+	</script>
+
+	<div id="foot_link"></div>
+	<script src="css/jquery.min.js"></script>
+	 <script>
+      $(function(){
+        $('#header_link').load('head.html');
+        $('#foot_link').load('foot.html');
+      })
+    </script>
+
+</body>
+</html>

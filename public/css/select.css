@@ -1,0 +1,27 @@
+*{margin: 0;padding: 0}
+a{
+
+}
+.content{
+    max-width:1440px; 
+    padding: 15px 80px 0 80px;
+    margin: 0 auto;
+}
+.select-side{
+    width: 155px;
+}
+.clear{
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.clear img{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.clear span{
+    cursor: pointer;
+}
+.list-item{
+    font-size: 13px;
+}

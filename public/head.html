@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/head.css">
+
+</head>
+<body>
+    <header> 
+        <div class="menu">
+            <ul class="menu_list">
+                <li class="user-login-wrapper">
+                    <a href="http://127.0.0.1:3000/user_login.html">用户登录</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="#">心愿清单</a>
+                    
+                </li>
+                <li class="line"></li>
+                <li class="cart"><a href="#">购物车</a></li>
+            </ul> 
+            
+                <div class="login-menu">
+                        <span>拥有A.R.T.西区账户您将获得以下权利</span>
+                        <ul>
+                            <li>保留您的心愿清单</li>
+                            <li>个性化您的推荐内容</li>
+                            <li>订单寄送追踪及退换货管理</li>
+                        </ul>
+                        <div class="btn-menu">
+                            <a href="http://127.0.0.1:3000/user_login.html">登录</a>
+                            <a href="">注册</a> 
+                        </div>
+                        
+                    </div>
+        </div>
+        <div class="main_logo">
+            <img src="image/head/logo.svg">
+        </div>
+        <div class="nav">
+            <ul class="nav_list">
+                <li class="index"><a href="http://127.0.0.1:3000/homepage.html">首页</a></li>
+                <li class="story"><a href="">西区故事</a></li>
+                <li id="style"><a href="">生活方式</a></li>
+                <li id="select"><a href="">在线挑选</a></li>
+                <li class="join"><a href="">加盟合作</a></li>
+                <li class="search"><a href="">搜索</a></li>
+            </ul>
+        </div>
+
+            <ul class="serise-list">
+                <li class="serise-item">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="image/head/1.jpg">
+                        </div>
+                        <span>威廉斯堡</span>
+                    </a>
+                </li> 
+                <li class="serise-item">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="image/head/2.jpg">
+                        </div>
+                        <span>奥斯汀</span>
+                    </a>
+                </li>
+                <li class="serise-item">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="image/head/3.jpg">
+                        </div>
+                        <span>银湖</span>
+                    </a>
+                </li>
+                <li class="serise-item">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="image/head/4.jpg">
+                        </div>
+                        <span>33127</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="class-list">
+                <li class="class-item">
+                    <a href="#" class="keting"><span>客厅</span></a> 
+                </li>
+                <li class="class-item">
+                    <a href="#" class="wofang"><span>卧房</span></a> 
+                </li>
+                <li class="class-item">
+                    <a href="#" class="canting"><span>餐厅</span></a> 
+                </li>
+                <li class="class-item">
+                    <a href="#" class="shufang"><span>书房</span></a> 
+                </li>
+                <li class="class-item">
+                    <a href="#" class="zhuangshi"><span>装饰家具</span></a> 
+                </li>
+                <li class="class-item">
+                    <a href="#" class="shipin"><span>饰品</span></a> 
+                </li>
+            </ul>
+        
+    </header>
+    <div style="height:140px;width:100%"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        //生活方式
+        $("#style").mouseover(function(){
+            $(".serise-list").show();
+        }).mouseout(function(){
+            $(".serise-list").hide();
+        })
+        $(".serise-list").mouseover(function(){
+            $(".serise-list").show();
+        }).mouseout(function(){
+            $(".serise-list").hide();
+        })
+        
+        //在线挑选
+        $("#select").mouseover(function(){
+            $(".class-list").show();
+        }).mouseout(function(){
+            $(".class-list").hide();
+        })
+        $(".class-list").mouseover(function(){
+            $(".class-list").show();
+        }).mouseout(function(){
+            $(".class-list").hide();
+        })
+        
+        //用户登录
+        var $userLogin=$("#user-login-wrapper")
+        $userLogin.mouseover(function(){
+            $(".login-menu").show();
+        }).mouseout(function(){
+            $(".login-menu").hide();
+        })
+        $(".login-menu").mouseover(function(){
+            $(".login-menu").show();
+        }).mouseout(function(){
+            $(".login-menu").hide();
+        })
+        
+    </script>
+</body>
+</html>

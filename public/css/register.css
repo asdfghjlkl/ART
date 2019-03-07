@@ -1,0 +1,110 @@
+*{margin:0;padding:0}
+.content{
+
+    margin: 0 10%;
+}
+.content .title{
+	text-align:center;
+	font-size:24px;
+	line-height:128px;
+	color:#4a4a4a;
+}
+.top-line{
+	height:18px;
+	position: relative;
+	
+}
+.title_img{
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:15px;
+	position: absolute;
+	top:-9px;
+}
+.line-left{
+	border:1px solid #f5f6f7;
+	width:48%;
+	float: left;
+}
+.line-right{
+	border:1px solid #f5f6f7;
+	width:48%;
+	float:right;
+}
+.content-detail{
+	width:280px;
+	margin:0 auto;
+}
+
+
+/*content-detail*/
+.content-detail{
+	margin: 20px auto 50px;
+	vertical-align:middle;
+}
+.content-detail span{
+	color:red;
+	margin-right:5px;
+	margin-top: 5px;
+	
+}
+.content-detail label{
+	font-size: 12px;
+}
+.phone-num,.code,.pwd-num,.pwd-num2,.user-name,.pet-name{
+	width:100%;
+	height:40px;
+	color: #4A4A4A;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin: 10px 0 20px;
+	border:1px solid #DFE3E6
+}
+.content-detail .pwd{
+	margin-top:20px;
+}
+.get-code a{
+	display: block;
+	color: #3D60AA;
+	font-size: 12px;
+	margin-top:-10px; 
+	letter-spacing:1px;
+}
+.checkbox-info span{
+	display: inline-block;
+	color: #000;
+	font-size: 14px;
+	margin-right: -5px;
+}
+.protocol{
+	
+	text-decoration: none;
+	color:#337ab7;
+	font-size: 14px;
+}
+
+.register-btn{
+	height: 40px;
+	color: #fff;
+	display: block;
+	background-color:#3D60AA;
+	border-color:#3D60AA;
+	box-shadow: none;
+    margin:20px 0;
+	border:none;
+	/*box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.24);*/
+	width:290px;
+}
+.login-info{
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+}
+.login-info a{
+	text-decoration: none;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+
